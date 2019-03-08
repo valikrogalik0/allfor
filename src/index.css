@@ -1,0 +1,14 @@
+body {
+  background-color: #fefefe;
+}
+body, p, ul{
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+ul {
+  list-style-type: none;
+}

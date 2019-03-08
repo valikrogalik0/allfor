@@ -1,0 +1,20 @@
+.slider-wrapper {
+    width: 100vw;
+    height: 79vh;
+}
+.slider-element{
+    height: 79vh;
+    width: 100vw;
+}
+.slider-image{
+    height: 79vh;
+    width: 100vw;
+}
+.carousel-control-next-icon {
+    height: 45px !important;
+    width: 45px !important;
+}
+.carousel-control-prev-icon {
+    height: 45px !important;
+    width: 45px !important;
+}

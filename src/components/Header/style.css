@@ -1,0 +1,80 @@
+header {
+    width: 100%;
+    box-shadow: 0px -1px 46px -19px black;
+    background-color: #fefefe;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+header > nav {
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-header{
+    background-color: #21202f;
+    color: #fff;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-header > ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-header > div > p {
+    margin: 0;
+    margin-left: 4px;
+    padding: 0;
+    float: right;
+}
+.social-header > div {
+    font-size: 20px;
+}
+.social-icons {
+    background-color: white;
+    width: 2.9vw;
+    height: 5.5vh;
+    padding: 1.50vh;
+    border-radius: 50%;
+    margin: 0 2px 0 2px;
+}
+.logo-header {
+    width: 12vw;
+    height: 18vh;
+    position: relative;
+    top: 1vh;
+    left: 3vw;
+    float: left;
+}
+.nav-link-wrapper {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-link {
+    font-family: 'Titillium Web', sans-serif;
+    width: auto;
+    padding: 2vh;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    transition: all .5s 0s ease;
+}
+.nav-link:hover {
+    background-color: #21202f;
+    color: white;
+    
+}
