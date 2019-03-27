@@ -6,7 +6,9 @@ import { createStore } from "redux";
 import reducer from "../../reducers";
 
 import Header from "../Header";
-import Main from "../pages/Main";
+import Main from "../layouts/Main";
+import News from "../layouts/News";
+import Footer from "../Footer";
 import "./style.css";
 
 const store = createStore(reducer);
@@ -19,7 +21,9 @@ class App extends Component {
           <Header />
           <Switch>
             <Route exact path="/" component={Main} />
+            <Route exact path="/news" component={News} />
           </Switch>
+          <Footer />
         </div>
       </Provider>
     );

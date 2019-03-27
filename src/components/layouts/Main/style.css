@@ -3,6 +3,9 @@
     width: 100vw;
     border-top: 2px solid grey;
 }
+.slick-arrow {
+    display: none !important;
+}
 
 /* static info */
 .static-info-about {
@@ -52,16 +55,18 @@
 .news-content {
     background-color: #fbfcfc;
     margin-bottom: 25vh;
-
 }
 .content-section-title{
     padding: 17vh 0 15vh 0;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 1.19;
     color: #21202f;
     text-align: center;
     text-transform: uppercase;
+}
+.slick-dots {
+    width: 95vw;
 }
 
 /* statistic block */
@@ -167,22 +172,19 @@
 .slider-news-item {
     width: 23vw;
     height: inherit;
-    
 }
 .slider-news  {
     width: 100vw;
-    height: 41vh;
+    /* overflow-x: hidden; */
     background-color: #fbfcfc;
     padding: 0 2vw;
+    /* overflow-y: hidden; */
 }
 .slider-news-image {
     width: 23vw;
     height: 40vh;
     margin: 0;
 }
-
-
-
 
 /* partners */
 

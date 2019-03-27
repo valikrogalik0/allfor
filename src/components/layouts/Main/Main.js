@@ -9,14 +9,18 @@ const Main = props => {
   const settingsPartners = {
     dots: false,
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 6000,
     speed: 500,
+    pauseOnHover: false,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     initialSlide: 0
   };
   const settingsNews = {
     dots: true,
     infinite: true,
+    autoplay: false,
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -151,7 +155,7 @@ const Main = props => {
         </Slider>
       </div>
       {/* <div className="wrap" /> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
