@@ -98,7 +98,7 @@ const Header = props => {
                 <Link to="/">Звіти</Link>
               </li>
               <li>
-                <Link to="/">Контакти</Link>
+                <Link to="/contacts">Контакти</Link>
               </li>
             </ul>
           </li>

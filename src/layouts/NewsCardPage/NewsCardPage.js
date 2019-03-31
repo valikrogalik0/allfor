@@ -7,7 +7,6 @@ import './style.css';
 class NewsCardPage extends Component {
     render() {
         const { id, title, text, photoURL } = this.props.news;
-        console.log(this.props);
         return (
             <div className='news-card-page'>
                 <h2 className='news-card-page-title'>{ title }</h2>

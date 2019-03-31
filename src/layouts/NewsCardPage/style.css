@@ -1,8 +1,20 @@
 .news-card-page {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 80%;
     height: max-content;
     margin-bottom: 5vh;
+    margin: 4vh 10% 5vh 10%;
 }
 .news-card-page-title {
     color: #5f5f5f;
+    font-weight: 500;
+}
+.news-card-page-text {
+    color: #767676
+}
+.news-card-page-image {
+    width: inherit;
 }

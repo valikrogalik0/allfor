@@ -10,6 +10,8 @@ import Main from "../../layouts/Main";
 import News from "../../layouts/News";
 import NewsCardPage from '../../layouts/NewsCardPage/NewsCardPage';
 import Footer from "../Footer";
+import Contacts from '../Contacts'
+
 import "./style.css";
 
 const store = createStore(reducer);
@@ -23,7 +25,8 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Main} />
             <Route exact path="/news" component={News} />
-            <Route exaca path='/news/:id' component={NewsCardPage} />
+            <Route exact path='/news/:id' component={NewsCardPage} />
+            <Route exact path='/contacts' component={Contacts} />
           </Switch>
           <Footer />
         </div>

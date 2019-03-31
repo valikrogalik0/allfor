@@ -1,0 +1,15 @@
+.contacts-wrap {
+    height: 47vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+}
+.contacts-info {
+    color: #767676;
+}
+.contacts-info > h2 {
+    color: #5f5f5f;
+}
