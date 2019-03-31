@@ -1,12 +1,11 @@
 import React, {Component} from "react";
-import Footer from "../../Footer";
-import NewsCard from "../../NewsCard";
-import data from "../../../data/news";
+import Footer from "../../components/Footer";
+import NewsCard from "../../components/NewsCard";
+
 
 import "./style.css";
 
-console.log(data.length)
-class News extends Component {
+class NewsPage extends Component {
     
     state = {
         page: 1,
@@ -14,17 +13,19 @@ class News extends Component {
     }
 
   render(){
+      const { data } = this.props
     return (
         <div className="news-page">
         <h2 className="news-page-title">Новини</h2>
         {Object.entries(data).map(
             ([key, value]) => {
                 return <NewsCard 
-                            key={value.id}
+                            key={Math.random() * 10000}
                             title={value.title}
-                            photo={value.imageUrl}
+                            photoURL={value.imageUrl}
                             text={value.text}
                             id={value.idNews}
+                            date={value.date}
                             />
             })
         }
@@ -33,4 +34,4 @@ class News extends Component {
 }
 };
 
-export default News;
+export default NewsPage;

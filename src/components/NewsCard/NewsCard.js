@@ -1,25 +1,42 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { connect } from 'react-redux';
+import { compose } from 'recompose';
+import { news } from '../../actions'
+
 import "./style.css";
 
 const NewsCard = props => {
-  const { title, photo, id, text } = props;
-  console.log(id)
+  const { date, title, photoURL, id, text, dispatch } = props;
   return (
     <div className="news-card-wrap">
       <div className="news-card-img">
-        <img src={photo} alt="Зображення" />
+        <img src={photoURL} alt="Зображення" />
       </div>
       <div className="news-card-info">
-        <Link to={`/news/:${id}`} className="news-card-title">
-          <h3>{title}</h3>
+        <div className='news-card-date'>{date}</div>
+        <Link 
+          onClick={() => dispatch(news({
+              title,
+              photoURL,
+              text,
+              id,
+            }))}
+          to={`/news/${id}`}
+          className="news-card-title">
+            <h3>{title}</h3>
         </Link>
-        <p>{text.substr(0, 500)}...</p>
-        <Link to={`/news/:${id}`} className="news-card-more">Детальніше</Link>
+        <p className='news-card-text'>{text.substr(0, 500)}...</p>
+        <Link
+          onClick={() => dispatch(news({title, photoURL, text, id}))}
+          to={`/news/${id}`}
+          className="news-card-more">
+            Детальніше
+          </Link>
       </div>
     </div>
   );
 };
 
-export default NewsCard;
+export default compose(connect((state, ownProps) => state))(NewsCard);

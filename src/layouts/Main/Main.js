@@ -1,6 +1,6 @@
 import React from "react";
-import SliderMain from "../../Slider";
-import Footer from "../../Footer";
+import SliderMain from "../../components/Slider";
+import Footer from "../../components/Footer";
 import Slider from "react-slick";
 
 import "./style.css";
