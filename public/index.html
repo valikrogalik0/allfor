@@ -35,6 +35,28 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCzbwgjLU9q9Q6T8pZM5x7P7-0Rievdm7o",
+        authDomain: "allforyouthua.firebaseapp.com",
+        databaseURL: "https://allforyouthua.firebaseio.com",
+        projectId: "allforyouthua",
+        storageBucket: "allforyouthua.appspot.com",
+        messagingSenderId: "658293439109",
+        appId: "1:658293439109:web:1549141cd0376545"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -46,5 +68,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
   </body>
 </html>

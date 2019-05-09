@@ -103,12 +103,13 @@ header > nav {
     z-index: 1000;
 }
 .drop-down-list a {
-    
+    width: inherit;
     margin: 0.5vh 0;
     font-size: 14px;
     font-weight: normal;
     color: #333;
     text-decoration: none;
+    /* padding: 1vh 1vw; */
 }
 .nav-link-wrapper > li > a:hover + .drop-down-list {
     display: block;
@@ -117,7 +118,6 @@ header > nav {
     display: block;
 } 
 .drop-down-list > li {
-    padding: 1vh 1vw;
 }
 .drop-down-list > li:hover {
     background-color: rgb(245, 245, 245);

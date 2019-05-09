@@ -13,7 +13,9 @@
     font-weight: 500;
 }
 .news-card-page-text {
-    color: #767676
+    font-size: 400;
+    color: #767676;
+    margin-bottom: 2vh;
 }
 .news-card-page-image {
     width: inherit;
